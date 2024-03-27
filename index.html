@@ -49,8 +49,8 @@
   <body>
     <!-- start of navbar section -->
     <header>
-      <nav class="navbar navbar-expand-lg py-3">
-        <div class="container px-5">
+      <nav class="navbar navbar-expand-md py-3">
+        <div class="container-fluid px-xs-3 px-md-5">
           <a class="navbar-brand" href="#">
             <img src="img/logo.svg" alt="logo-image" />
           </a>
@@ -107,10 +107,12 @@
     <!-- end of navbar section -->
 
     <!-- start of hero banner section -->
-    <section class="hero-banner mb-5">
-      <div class="container px-5">
-        <div class="row align-items-center justify-content-start">
-          <div class="hero-banner-tagline col-md-6">
+    <section class="hero-banner mb-md-5">
+      <div class="container px-4 px-md-5">
+        <div
+          class="row align-items-center justify-content-start gap-4 gap-md-0"
+        >
+          <div class="hero-banner-tagline col-md-6 p-0">
             <h1>Sewa & Rental Mobil Terbaik di kawasan Kudus</h1>
             <p>
               Selamat datang di Binar Car Rental. Kami menyediakan mobil
@@ -124,6 +126,7 @@
               src="img/img_car.svg"
               alt="car-image"
               class="justify-content-end"
+              id="car-image"
             />
           </div>
         </div>
@@ -132,13 +135,17 @@
     <!-- end of hero banner section-->
 
     <!-- start of our services section -->
-    <section class="our-services py-5" id="our-services">
-      <div class="container px-5">
+    <section class="our-services py-4" id="our-services">
+      <div class="container px-3 px-md-5">
         <div
-          class="d-flex flex-row align-items-center justify-content-around px-5"
+          class="row align-items-center justify-content-around gap-4 gap-md-0"
         >
           <div class="our-services-image col-md-5">
-            <img src="img/img_service.svg" alt="service-image" />
+            <img
+              src="img/img_service.svg"
+              alt="service-image"
+              class="img-fluid px-5 px-md-0"
+            />
           </div>
           <div class="our-services-header col-md-5">
             <h1 class="mb-4">Best Car Rental for any kind of trip in Kudus!</h1>
@@ -189,15 +196,17 @@
     <!-- end of our services  section -->
 
     <!-- start of why us section -->
-    <section class="why-us py-5" id="why-us">
-      <div class="container px-5">
+    <section class="why-us py-4" id="why-us">
+      <div class="container px-3 px-md-5">
         <div class="d-flex flex-column">
-          <div class="why-us-header d-flex flex-column gap-2">
+          <div
+            class="why-us-header d-flex flex-column gap-2 text-center text-md-start"
+          >
             <h1>Why Us?</h1>
             <p>Mengapa harus pilih Binar Car Rental?</p>
           </div>
           <div
-            class="why-us-card d-flex flex-row justify-content-between flex-wrap"
+            class="why-us-card d-flex flex-row justify-content-between flex-wrap gap-3 gap-md-0"
           >
             <div class="col-md-3">
               <div class="why-us-item d-flex flex-column gap-2 p-4">
@@ -351,13 +360,15 @@
     <!-- end of testimonial carousel section -->
 
     <!-- start of cta section -->
-    <section class="cta py-5">
-      <div class="container px-5">
+    <section class="cta py-4">
+      <div class="container px-md-5">
         <div
           class="cta-banner d-flex flex-column justify-content-center align-items-center py-5 gap-2"
         >
-          <h1 class="fw-bold mt-3">Sewa Mobil di Kudus Sekarang</h1>
-          <p class="text-center w-50">
+          <h1 class="fw-bold mt-3 mx-5 text-center">
+            Sewa Mobil di Kudus Sekarang
+          </h1>
+          <p class="text-center w-75 w-md-50">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -368,9 +379,9 @@
     <!-- end of cta section -->
 
     <!-- start of faq section -->
-    <section class="faq py-5" id="faq">
-      <div class="container px-5">
-        <div class="d-flex flex-row justify-content-between">
+    <section class="faq py-4" id="faq">
+      <div class="container px-md-5">
+        <div class="row justify-content-between">
           <div class="faq-header col-md-4 d-flex flex-column gap-2">
             <h1 class="fw-bold fs-3">Frequently Asked Question</h1>
             <p class="fw-light">
@@ -528,9 +539,9 @@
     <!-- end of faq section -->
 
     <!-- start of footer section -->
-    <footer class="footer py-5" id="footer">
-      <div class="container px-5">
-        <div class="d-flex flex-row justify-content-between">
+    <footer class="footer py-4" id="footer">
+      <div class="container px-3 px-md-5">
+        <div class="d-md-flex flex-md-row justify-content-between gap-sm-3">
           <div class="d-flex flex-column gap-2">
             <p class="w-75">
               Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
