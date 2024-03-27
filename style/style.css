@@ -25,6 +25,10 @@
     border-radius: 2px;
 }
 
+.navbar-toggler {
+    border: transparent;
+}
+
 /* hero-banner start */
 .hero-banner {
     background-color: var(--grayblue);
@@ -72,6 +76,7 @@
 }
 
 .our-services-item .bi-check {
+    -webkit-text-stroke: 1px;
     color: darkblue;
     background-color: var(--grayblue);
 }
@@ -148,6 +153,10 @@
     border-radius: 100%;
 }
 
+.star {
+    align-items: center;
+}
+
 .star .bi {
     color: var(--limeyellow);
 }
@@ -199,13 +208,13 @@
 /* footer end */
 
 /* responsive start*/
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 450px) {
     #car-image {
-        height: 200px;
+        height: 230px;
     }
 
     .why-us-item {
         width: auto;
     }
 }
-/* responsive end */
+/* responsive end *

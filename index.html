@@ -50,39 +50,46 @@
     <!-- start of navbar section -->
     <header>
       <nav class="navbar navbar-expand-md py-3">
-        <div class="container-fluid px-xs-3 px-md-5">
+        <div class="container px-4 px-md-5">
           <a class="navbar-brand" href="#">
             <img src="img/logo.svg" alt="logo-image" />
           </a>
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <span
-              class="navbar-toggler-icon"
-              data-bs-toggle="offcanvas"
-              href="#offcanvasNavbar"
-              role="button"
-              aria-controls="offcanvasNavbar"
-            ></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse offcanvas offcanvas-end"
+            class="offcanvas w-50 offcanvas-end"
             tabindex="-1"
-            id="navbarSupportedContent"
+            id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div class="w-100 d-md-block">
+            <div class="offcanvas-header px-4 py-4">
+              <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel">
+                BCR
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body p-0">
               <ul
-                class="navbar-nav d-flex align-items-start justify-content-end mx-3 gap-4 fw-bold"
+                class="navbar-nav justify-content-end flex-grow-1 px-4 gap-1 gap-md-4"
               >
                 <li class="nav-item">
-                  <a class="nav-link active" href="#our-services"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="our-services"
                     >Our Services</a
                   >
                 </li>
@@ -107,12 +114,10 @@
     <!-- end of navbar section -->
 
     <!-- start of hero banner section -->
-    <section class="hero-banner mb-md-5">
-      <div class="container px-4 px-md-5">
-        <div
-          class="row align-items-center justify-content-start gap-4 gap-md-0"
-        >
-          <div class="hero-banner-tagline col-md-6 p-0">
+    <section class="hero-banner mb-5">
+      <div class="container px-md-5">
+        <div class="row align-items-center justify-content-start gap-md-0">
+          <div class="hero-banner-tagline col-md-6 py-4 px-4">
             <h1>Sewa & Rental Mobil Terbaik di kawasan Kudus</h1>
             <p>
               Selamat datang di Binar Car Rental. Kami menyediakan mobil
@@ -121,7 +126,7 @@
             </p>
             <button class="btn fw-bold" type="button">Mulai Sewa Mobil</button>
           </div>
-          <div class="hero-banner-image col-md-4 p-0">
+          <div class="hero-banner-image text-end col-md-4 p-0">
             <img
               src="img/img_car.svg"
               alt="car-image"
@@ -136,7 +141,7 @@
 
     <!-- start of our services section -->
     <section class="our-services py-4" id="our-services">
-      <div class="container px-3 px-md-5">
+      <div class="container px-4 px-md-5">
         <div
           class="row align-items-center justify-content-around gap-4 gap-md-0"
         >
@@ -197,7 +202,7 @@
 
     <!-- start of why us section -->
     <section class="why-us py-4" id="why-us">
-      <div class="container px-3 px-md-5">
+      <div class="container px-4 px-md-5">
         <div class="d-flex flex-column">
           <div
             class="why-us-header d-flex flex-column gap-2 text-center text-md-start"
@@ -263,7 +268,10 @@
     <!-- end of why us section -->
 
     <!-- start of testimonial carousel section -->
-    <section class="testimonials container-fluid py-5" id="testimonials">
+    <section
+      class="testimonials container-fluid py-5 px-4 px-md-0"
+      id="testimonials"
+    >
       <div class="text-center pb-4">
         <h1 class="fs-3 fw-bold">Testimonial</h1>
         <p>Berbagai review positif dari para pelanggan kami</p>
@@ -281,10 +289,8 @@
                 class="testimonial-image rounded-circle"
               />
             </div>
-            <div
-              class="col-md d-flex flex-column align-center justify-content-center gap-2"
-            >
-              <div class="star">
+            <div class="col-md d-flex flex-column justify-content-center px-5">
+              <div class="star text-center mb-4">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -302,7 +308,7 @@
           </div>
         </div>
         <div class="item">
-          <div class="item-box row py-5">
+          <div class="item-box row py-5 gap-4">
             <div
               class="col-md-3 d-flex flex-row justify-content-center my-auto"
             >
@@ -312,10 +318,8 @@
                 class="testimonial-image rounded-circle"
               />
             </div>
-            <div
-              class="col-md d-flex flex-column align-center justify-content-center gap-2"
-            >
-              <div class="star">
+            <div class="col-md d-flex flex-column justify-content-center px-5">
+              <div class="star text-center mb-4">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -361,7 +365,7 @@
 
     <!-- start of cta section -->
     <section class="cta py-4">
-      <div class="container px-md-5">
+      <div class="container px-4 px-md-5">
         <div
           class="cta-banner d-flex flex-column justify-content-center align-items-center py-5 gap-2"
         >
@@ -380,7 +384,7 @@
 
     <!-- start of faq section -->
     <section class="faq py-4" id="faq">
-      <div class="container px-md-5">
+      <div class="container px-4 px-md-5">
         <div class="row justify-content-between">
           <div class="faq-header col-md-4 d-flex flex-column gap-2">
             <h1 class="fw-bold fs-3">Frequently Asked Question</h1>
@@ -540,8 +544,10 @@
 
     <!-- start of footer section -->
     <footer class="footer py-4" id="footer">
-      <div class="container px-3 px-md-5">
-        <div class="d-md-flex flex-md-row justify-content-between gap-sm-3">
+      <div class="container px-4 px-md-5">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between gap-4"
+        >
           <div class="d-flex flex-column gap-2">
             <p class="w-75">
               Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
@@ -549,7 +555,7 @@
             <p>binarcarrental@gmail.com</p>
             <p>081-233-334-808</p>
           </div>
-          <div class="footer-nav d-flex flex-column gap-3">
+          <div class="footer-nav d-flex flex-column gap-2">
             <a
               class="nav-link"
               href="#our-services"

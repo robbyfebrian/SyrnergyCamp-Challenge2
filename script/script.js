@@ -3,15 +3,16 @@ $(".owl-carousel").owlCarousel({
   margin: 50,
   center: true,
   loop: true,
-  autoplay:true,
-  autoplayTimeout:2000,
+  autoplay: true,
+  autoplayTimeout: 3000,
   autoplayHoverPause: true,
   responsive: {
     0: {
       items: 1,
     },
-    600: {
-      items: 2,
+    450: {
+      items: 1,
+      stagePadding: 0,
     },
     1000: {
       items: 1,
@@ -19,10 +20,11 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
-$('.bi .bi-chevron-right').click(function() {
-  owl.trigger('next.owl.carousel');
-})
-
-$('.bi .bi-chevron-left').click(function() {
-  owl.trigger('prev.owl.carousel');
-})
+var owl = $(".owl-carousel");
+owl.owlCarousel();
+$(".btn-right").click(function () {
+  owl.trigger("next.owl.carousel");
+});
+$(".btn-left").click(function () {
+  owl.trigger("prev.owl.carousel", [300]);
+});
